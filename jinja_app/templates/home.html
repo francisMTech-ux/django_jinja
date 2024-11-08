@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block tittle %}HOME-RUBY{% endblock %}
+{% block content %}
+    <section class="hero">
+    <h2>Welcome to the Ultimate Ruby Programming Class!</h2>
+    <p>Master Ruby programming from scratch and unlock career-ready skills with our structured, hands-on courses.</p>
+    <a href="{% url 'contact' %}" >Get Started Now</a>
+</section>
+
+<section class="why-choose-us">
+    <h3>Why Choose Ruby?</h3>
+    <ul>
+        <li><strong>Beginner-Friendly:</strong> Ruby’s clean, intuitive syntax makes it easy to learn.</li>
+        <li><strong>Powerful for Web Development:</strong> Ruby on Rails is a popular framework that powers many websites.</li>
+        <li><strong>High Demand for Ruby Developers:</strong> Ruby developers are highly sought after by tech companies.</li>
+    </ul>
+</section>
+
+<section class="course-highlights">
+    <h3>Course Highlights</h3>
+    <ul>
+        <li><strong>Ruby Basics:</strong> Learn syntax, variables, and data types.</li>
+        <li><strong>Control Flow:</strong> Master loops, conditionals, and data structures.</li>
+        <li><strong>Object-Oriented Programming:</strong> Build complex, modular applications.</li>
+        <li><strong>Web Development with Rails:</strong> Create and deploy full-stack applications.</li>
+    </ul>
+</section>
+
+<section class="testimonials">
+    <h3>What Our Students Say</h3>
+    <blockquote>
+        "The Ruby Programming Class transformed my career! The hands-on projects and expert guidance made all the difference." - Alex P.
+    </blockquote>
+    <blockquote>
+        "I went from zero coding experience to building my own apps in just a few weeks. Highly recommend this class!" - Jamie L.
+    </blockquote>
+</section>
+{% endblock %}

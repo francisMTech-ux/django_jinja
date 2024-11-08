@@ -1,0 +1,31 @@
+<!-- main/templates/main/blog.html -->
+{% extends 'base.html' %}
+{% block title %}Blog | Ruby Programming Class{% endblock %}
+{% block content %}
+<section class="blog">
+    <h2>Ruby Programming Insights & Tips</h2>
+    <p>Explore our articles to gain deeper insights into Ruby programming, tech trends, and coding tips to elevate your learning experience.</p>
+
+    <div class="blog-cards">
+        <div class="blog-card">
+            <h3><a href="#">Getting Started with Ruby – The Basics</a></h3>
+            <p>Ruby is known for its simplicity and elegance, making it ideal for beginners. Learn the basics to kickstart your coding journey.</p>
+        </div>
+
+        <div class="blog-card">
+            <h3><a href="#">Top 5 Reasons to Learn Ruby in 2024</a></h3>
+            <p>Ruby continues to be a valuable skill for web development. Discover why learning Ruby can be a smart investment in your future.</p>
+        </div>
+
+        <div class="blog-card">
+            <h3><a href="#">Building Your First Ruby App – A Beginner’s Guide</a></h3>
+            <p>Follow this step-by-step guide to building a simple Ruby application from scratch.</p>
+        </div>
+
+        <div class="blog-card">
+            <h3><a href="#">Understanding Ruby on Rails</a></h3>
+            <p>Dive into Ruby on Rails, the popular framework for web development, and learn how it simplifies building web applications.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

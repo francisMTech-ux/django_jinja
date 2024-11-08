@@ -1,0 +1,45 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block tittle %} RUBY CLASS{% endblock %}</title>
+</head>
+<body>
+
+<header>
+    <h1>RUBY CLASS</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}" class="button"></a>HOME</li>
+            <li><a href="{% url 'about' %}"></a>ABOUT</li>
+            <li><a href="{% url 'contact' %}"></a>CONTACT</li>
+            <li><a href="{% url 'services' %}" class="button"></a>SERVICES</li>
+            <li><a href="{% url 'my_blog' %}" class="button">BLOGS</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    {% block content %}
+{# PAGE SPECIFIC CONTENT TO GO HERE #}
+    {% endblock %}
+</main>
+
+
+
+
+
+
+
+</body>
+<footer>
+    <p>&copy;2024 ruby class</p>
+</footer>
+</html>

@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:lightskyblue;
+    text-align: center;
+    text-decoration-color: #333333;
+
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position:inherit;
+    bottom: 0;
+    width: 100%;
+
+}
+/* Card layout for blog posts */
+.blog {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.blog-card h3 a {
+    text-decoration: none;
+    color: #333333;
+    transition: color 0.3s ease;
+}
+
+.blog-card h3 a:hover {
+    color: #007acc; /* Change to a suitable accent color */
+}
+
+.blog-card p {
+    font-size: 1em;
+    color: #555555;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+    .blog-cards {
+        grid-template-columns: 1fr 1fr; /* Two columns on medium screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .blog-cards {
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns on large screens */
+    }
+}

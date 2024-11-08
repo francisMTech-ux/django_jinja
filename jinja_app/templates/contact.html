@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block tittle %}CONTACT US-RUBY{% endblock %}
+{% block content %}
+    <section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need assistance, please reach out to us using the form below or our contact information.</p>
+
+    <form action="{% url 'contact' %}" method="post">
+        {% csrf_token %}
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+        <p><strong>Email:</strong> RUBY@rubyclass.com</p>
+        <p><strong>Phone:</strong> 071234567</p>
+        <p><strong>Location:</strong> NAIROBI,KENYA</p>
+    </div>
+</section>
+{% endblock %}
